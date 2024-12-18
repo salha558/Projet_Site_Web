@@ -1,0 +1,632 @@
+
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header - Contenu - Footer */
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav .menu {
+    list-style: none;
+    padding: 0;
+}
+
+header nav .menu li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav .menu li a:hover {
+    text-decoration: underline;
+}
+/* --- Section Biographie avec photo --- */
+.bio-section {
+    display: flex; /* Utilisation de Flexbox */
+    align-items: center; /* Centrage vertical des éléments */
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.bio-section .photo {
+    flex: 1; /* La photo occupe 1 partie du conteneur */
+    text-align: center;
+}
+
+.bio-section .photo img {
+    width: 200px; /* Taille de la photo */
+    height: auto;
+    border-radius: 50%; /* Photo en cercle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bio-section .biographie {
+    flex: 2; /* La biographie occupe 2 parties du conteneur */
+    padding-left: 20px;
+}
+
+.bio-section .biographie h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.bio-section .biographie p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align : justify;
+}
+
+
+/* Réseaux sociaux */
+.reseaux-sociaux ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.reseaux-sociaux ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.reseaux-sociaux ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+/**************************************************************************************/
+/* Style général pour les pages internes */
+main {
+    padding: 20px;
+}
+
+/* Section parcours académique */
+.parcours {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.parcours h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Style des diplômes */
+.diplome {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.diplome img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.diplome .details {
+    flex: 1;
+}
+
+.diplome .details h3 {
+    color: #007bff;
+    margin: 0;
+}
+
+.diplome .details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Ajout d'espacement pour la navigation */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+/***********************************************************************************/
+/* Section compétences */
+.competences {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.competences h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Style des catégories */
+.categorie {
+    margin-bottom: 20px;
+}
+
+.categorie h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.categorie ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categorie ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.categorie ul li strong {
+    color: #007bff;
+}
+.categorie-img{
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+    border-radius: 50%; 
+}
+
+/************************************************experiences******************************/
+/* Section expériences */
+.experiences {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.experience-img,.experience-video{
+    height: 50%;
+    width: 50%;
+    padding: 20px;
+}
+
+
+/* Style des expériences */
+.experience {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.experience h3 {
+    color: #333;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.experience p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.experience ul {
+    list-style: disc inside;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.experience ul li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/*************************************************evenements**************************************/
+/* Section événements */
+.evenements {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.evenements h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Style des événements */
+.evenement {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.event-img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.event-details h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.event-details p {
+    margin: 5px 0;
+    color: #555;
+}
+/****************************************************************************matieres***/
+/* Section matières */
+.matieres {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.matieres h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Style des matières */
+.matiere {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.matiere h3 {
+    color: #333;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.matiere p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.matiere ul {
+    list-style: disc inside;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.matiere ul li {
+    margin-bottom: 5px;
+    color: #333;
+}
+/*********************************************************passions*********************/
+/* Section passions */
+.passions {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.passions h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.passion {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.passion-img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.passion-details h3 {
+    color: #333;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.passion-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Section qualités */
+.qualites {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.qualites h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.qualites ul {
+    list-style: none;
+    padding: 0;
+}
+
+.qualites ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.qualites-img{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+/*********************************************quizz*****************************/
+/* Section quizz */
+.quizz {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.quizz h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+button#submit-quizz {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button#submit-quizz:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#result.hidden {
+    display: none;
+}
+/**************************************************contact****************/
+/* Section contact */
+.contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+form#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button.btn-submit:hover {
+    background-color: #0056b3;
+}
+/**************************************Témoignages*****************************************/
+/* Section Témoignages */
+.temoignages-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.temoignages-section h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Style des témoignages */
+.temoignage {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.temoignage img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.temoignage-contenu h3 {
+    margin: 0;
+    color: #333;
+}
+
+.temoignage-contenu p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.temoignage-contenu p strong {
+    color: #007bff;
+}
